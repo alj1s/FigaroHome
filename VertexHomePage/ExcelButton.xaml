@@ -1,0 +1,37 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	mc:Ignorable="d"
+	x:Class="VertexHomePage.ExcelButton"
+	x:Name="UserControl"
+	d:DesignWidth="20" d:DesignHeight="20">
+	<UserControl.Resources>
+		
+		<Style x:Key="menuButton" TargetType="{x:Type Button}">
+			<Setter Property="Template">
+				<Setter.Value>
+					<ControlTemplate TargetType="{x:Type Button}" >
+						<ContentPresenter TextElement.Foreground="White" />
+					</ControlTemplate>
+				</Setter.Value>	
+			</Setter>
+		</Style>
+		
+	</UserControl.Resources>
+
+	<Grid x:Name="LayoutRoot">
+		<Button Style="{StaticResource menuButton}" d:LayoutOverrides="Width, Height">
+						
+			<Path Data="M33.374784,10.822461C33.596149,10.830255,33.843211,10.936929,34.102826,11.152984L36.000681,12.738375C36.921856,13.509172,38.430317,14.769566,39.350193,15.537862L41.249844,17.124953C42.172918,17.89515,42.159222,19.141944,41.225143,19.89384L39.298695,21.444034C38.362417,22.200429,36.83276,23.431623,35.897182,24.183419L33.971433,25.734313C33.037157,26.490209,32.282576,25.858711,32.295774,24.334518L32.322373,21.406833 21.151462,21.406833C20.364882,21.406833,19.726999,20.767536,19.726999,19.981039L19.726999,16.893855C19.726999,16.108059,20.364882,15.469362,21.151462,15.469362L32.375774,15.469362 32.40047,12.524778C32.41118,11.428401,32.809072,10.802544,33.374784,10.822461z M9.3348141,0L14.90645,8.4499774 20.502906,0.16809082 28.336986,0.16809082 18.949391,14.225346C18.177183,14.864048,17.673978,15.816451,17.673978,16.894054L17.673978,19.981265C17.673978,21.899371,19.233794,23.457876,21.151313,23.457876L24.80295,23.457876 29.671,30.839 21.586918,30.839 14.745548,20.521067 11.586017,25.254082 15.502156,25.170781 15.586057,30.506 0,30.506 10.784509,14.549147 1.2487926,0.16809082z" Stretch="Uniform" Fill="#FFFFFFFF" Width="20" Height="20" Margin="0,0,0,0" RenderTransformOrigin="0.5,0.5">
+				<Path.RenderTransform>
+					<TransformGroup>
+						<RotateTransform Angle="0" />
+						<ScaleTransform ScaleX="1" ScaleY="1" />
+					</TransformGroup>
+				</Path.RenderTransform>
+			</Path>
+		</Button>
+	</Grid>
+</UserControl>
